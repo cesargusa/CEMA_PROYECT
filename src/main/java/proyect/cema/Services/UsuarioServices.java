@@ -1,13 +1,11 @@
 package proyect.cema.Services;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import proyect.cema.Repositories.Entities.UsuarioEntity;
 import proyect.cema.Repositories.Interfaces.UsuarioRepository;
 import proyect.cema.Services.Models.UsuarioDTO;
 
