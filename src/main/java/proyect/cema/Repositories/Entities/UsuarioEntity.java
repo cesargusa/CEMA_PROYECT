@@ -1,5 +1,6 @@
 package proyect.cema.Repositories.Entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +12,8 @@ import javax.persistence.Table;
 public class UsuarioEntity {
 
     private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long id;
+    
+    @Column(name ="Email", unique = true)
     private String email;
     private String contraseña;
     private String nombre;
@@ -21,6 +24,7 @@ public class UsuarioEntity {
     private String descripcion;
 
     public UsuarioEntity() {
+        
     }
 
     public UsuarioEntity(String email, String contraseña, String nombre, String apellido, String telefono, String ciudad,
